@@ -180,16 +180,7 @@ a.card:hover { border-color: var(--accent); }
 .deck .deck-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.6rem; margin-bottom: 0.7rem; }
 .deck .credit { margin: 0; font-size: 0.75rem; }
 .pips { display: inline-flex; gap: 0.2rem; }
-.pip {
-  display: inline-grid; place-items: center;
-  width: 1.3rem; height: 1.3rem; border-radius: 50%;
-  font-size: 0.7rem; font-weight: 600; line-height: 1; color: #fff;
-}
-.pip-W { background: #f3edcf; color: #111; }
-.pip-U { background: #2f78c4; }
-.pip-B { background: #3a3532; box-shadow: inset 0 0 0 1px #6d6560; }
-.pip-R { background: #d2452c; }
-.pip-G { background: #2f8a49; }
+.pip { display: block; width: 1.25rem; height: 1.25rem; }
 @media (max-width: 34rem) {
   .deck { grid-template-columns: 1fr; }
   .deck-art img { aspect-ratio: 2 / 1; object-fit: cover; object-position: center 30%; }
