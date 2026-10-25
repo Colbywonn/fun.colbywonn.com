@@ -1,0 +1,111 @@
+# Commander decks, in the order they appear on /decks/. `colors` is the color identity in WUBRG
+# order. `art` is the commander's art crop, served by Scryfall; `artist` is credited on the card.
+# `about` is a placeholder strategy summary until the real writeups exist.
+- name: Breena
+  commander: Breena, the Demagogue
+  colors: WB
+  archidekt: https://archidekt.com/decks/4111512
+  art: https://cards.scryfall.io/art_crop/front/5/9/599f87c8-643e-4224-93a5-853c0bd4e497.jpg
+  artist: Simon Dominic
+  about: >-
+    Politics and prison. Breena pays the table to attack whoever has the most life, while taxes
+    and hatebears (Ghostly Prison, Thalia, Drannith Magistrate, Torpor Orb) make attacking me a
+    bad deal and slow everyone else down. A deep removal suite and five wraths clean up when
+    someone breaks through.
+- name: Anime, swole of elements
+  commander: Animar, Soul of Elements
+  colors: URG
+  archidekt: https://archidekt.com/decks/4076478
+  art: https://cards.scryfall.io/art_crop/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg
+  artist: Filip Burburan
+  about: >-
+    Creature storm. Every creature spell grows Animar and makes the next one cheaper, and bounce
+    loops (Ancestral Statue, Temur Sabertooth, Shrieking Drake) recast creatures for almost
+    nothing to keep the discount climbing. Once creatures are free, Eldrazi titans and Blightsteel
+    Colossus end the game.
+- name: Dread is Manifested (a lot)
+  commander: Zimone, Mystery Unraveler
+  colors: UG
+  archidekt: https://archidekt.com/decks/11024069
+  art: https://cards.scryfall.io/art_crop/front/3/0/30f23588-5064-48d9-a271-039df757f8d2.jpg
+  artist: Mila Pesic
+  about: >-
+    Lands matter, with a mystery box. Ramp and extra land drops trigger Zimone to manifest dread,
+    filling the board with face-down creatures, and later land drops flip them face up. Morph and
+    disguise payoffs (Deathmist Raptor, Kheru Spellsnatcher, Trail of Mystery) reward flipping at
+    the right moment.
+- name: Lathril
+  commander: Lathril, Blade of the Elves
+  colors: BG
+  archidekt: https://archidekt.com/decks/3847733
+  art: https://cards.scryfall.io/art_crop/front/8/d/8d4e5480-a287-4a25-b855-a26dae555b1c.jpg
+  artist: Caroline Gariba
+  about: >-
+    Elf tribal. Lathril turns combat damage into more elves, mana elves (Priest of Titania,
+    Elvish Archdruid, Itlimoc) turn the swarm into a pile of mana, and tapping ten elves drains
+    every opponent for 10. Craterhoof Behemoth and Triumph of the Hordes are there if the drain
+    isn't enough.
+- name: Niv-Mizzet, The Slinger
+  commander: Niv-Mizzet, Parun
+  colors: UR
+  archidekt: https://archidekt.com/decks/3848943
+  art: https://cards.scryfall.io/art_crop/front/8/6/86c5c337-d25f-4c3e-9762-09ed0c2d36d7.jpg
+  artist: Svetlin Velinov
+  about: >-
+    Spellslinger with a combo finish. Every instant or sorcery draws a card and every card drawn
+    pings for 1, so cheap cantrips and counterspells turn into damage. Curiosity or Ophidian Eye
+    on Niv-Mizzet loops draws and pings until the table is dead, with Thassa's Oracle as a backup
+    win.
+- name: Vorinclex
+  commander: Vorinclex, Monstrous Raider
+  colors: G
+  archidekt: https://archidekt.com/decks/3981069
+  art: https://cards.scryfall.io/art_crop/front/9/2/92613468-205e-488b-930d-11908477e9f8.jpg
+  artist: Daarken
+  about: >-
+    Mono-green superfriends. Vorinclex doubles every counter, so planeswalkers (a dozen Nissas,
+    Garruks, and Viviens, plus Ugin) enter close to their ultimates, and +1/+1 counter creatures
+    like Kalonian Hydra get out of hand fast. Doubling Season stacks on top for even sillier
+    numbers.
+- name: Boros tokens
+  commander: Otharri, Suns' Glory
+  colors: RW
+  archidekt: https://archidekt.com/decks/3947615
+  art: https://cards.scryfall.io/art_crop/front/8/9/89b4491d-154d-46e2-84c2-afa4596e2b13.jpg
+  artist: Marta Nael
+  about: >-
+    Go wide, then go again. Otharri makes a bigger rebel army every time it attacks, while token
+    doublers (Anointed Procession, Mondrak), anthems, and extra combats (Aurelia, Aggravated
+    Assault, Seize the Day) multiply each swing. If Otharri dies, tapping a rebel brings it back.
+- name: Neck-you-sour
+  commander: Nekusar, the Mindrazer
+  colors: UBR
+  archidekt: https://archidekt.com/decks/4786099
+  art: https://cards.scryfall.io/art_crop/front/4/a/4afdc65d-3c97-47af-83fa-df340389802e.jpg
+  artist: Mark Winters
+  about: >-
+    Group slug. Wheels and symmetrical draw (Windfall, Howling Mine, Wheel of Misfortune) make
+    everyone draw piles of cards, and Nekusar, Underworld Dreams, and Orcish Bowmasters make
+    every one of those cards hurt. Counterspells keep anyone from shutting it off.
+- name: Mono black lifegain
+  commander: Tivash, Gloom Summoner
+  colors: B
+  archidekt: https://archidekt.com/decks/4268344
+  art: https://cards.scryfall.io/art_crop/front/e/3/e3b2a152-7bb9-495d-ac84-516097754137.jpg
+  artist: Kieran Yanner
+  about: >-
+    Drain and convert. Lifelinkers and drain effects (Gray Merchant, Vampiric Link, Tendrils of
+    Corruption) pad my life total, and Tivash turns that life into a flying demon at the end of
+    each turn. Heavy creature removal (Shriekmaw, Ravenous Chupacabra, Massacre Girl) keeps the
+    board clear. It started as a $20 budget deck, and it is not a $20 deck anymore.
+- name: Jarad the guy
+  commander: Jarad, Golgari Lich Lord
+  colors: BG
+  archidekt: https://archidekt.com/decks/3842043
+  art: https://cards.scryfall.io/art_crop/front/6/8/6870b355-e53d-4fa2-887b-0f0445bcd9c5.jpg
+  artist: Eric Deschamps
+  about: >-
+    Self-mill and fling. The deck dumps its own library into the graveyard (Golgari Grave-Troll,
+    Stitcher's Supplier, Splinterfright), which makes Jarad huge, then sacrifices big creatures
+    to drain each opponent for their power. Reanimation (Victimize, Dread Return, Phyrexian
+    Reclamation) brings the giants back to do it again.
