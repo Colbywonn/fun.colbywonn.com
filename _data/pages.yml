@@ -1,0 +1,27 @@
+# The site's pages, in nav and homepage order. A page with `soon: true` shows as a
+# "Coming soon" card and stays out of the nav; remove the flag once the page exists.
+- title: Games
+  url: /games/
+  blurb: Curated lists of games, each with a theme.
+  soon: true
+- title: Commander Decks
+  nav: Decks
+  url: /decks/
+  blurb: My Commander decks, with a link to each list on Archidekt.
+  soon: true
+- title: Setup
+  url: /setup/
+  blurb: My current PC and desk.
+  soon: true
+- title: Sorting
+  url: /sorting/
+  blurb: Meme sorting algorithms, running in real time.
+  soon: true
+- title: Map Generator
+  url: /map/
+  blurb: Type a seed, get a world.
+  soon: true
+- title: Servers
+  url: /servers/
+  blurb: Status and how to join, once Firelink is up.
+  soon: true

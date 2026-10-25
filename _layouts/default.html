@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <meta name="theme-color" content="#000000">
+  <link rel="preload" href="{{ '/assets/fonts/plex-mono-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  {% if page.hero %}<link rel="preload" href="{{ '/assets/fonts/vt323-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>{% endif %}
+  <!-- ?v=build time: GitHub Pages lets browsers reuse assets for 10 min, so stamp each deploy -->
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-nav">
+      <div class="site-nav-inner">
+        <nav>
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="current"{% endif %}>Home</a>
+          {%- for p in site.data.pages %}{% unless p.soon %}
+          <a href="{{ p.url | relative_url }}"{% if page.url contains p.url %} class="current"{% endif %}>{{ p.nav | default: p.title }}</a>
+          {%- endunless %}{% endfor %}
+        </nav>
+        <a href="https://colbywonn.com">colbywonn.com</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>
+      <span>&copy; {{ 'now' | date: "%Y" }} Colby Miller &middot; <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener">CC BY 4.0</a></span>
+      <span class="footer-links">
+        <a href="https://github.com/Colbywonn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://colbywonn.com">colbywonn.com</a>
+      </span>
+    </p>
+  </footer>
+</body>
+</html>

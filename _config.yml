@@ -1,0 +1,11 @@
+title: fun.colbywonn.com
+description: Toys, lists, and side projects by Colby Miller.
+url: "https://fun.colbywonn.com"
+author: Colby Miller
+lang: en
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - LICENSE
