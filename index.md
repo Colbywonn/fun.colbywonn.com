@@ -6,6 +6,7 @@ hero: true
 
 <div class="hero">
   <h1 class="crt">fun.colbywonn.com<span class="cursor" aria-hidden="true">_</span></h1>
+  <p class="tagline">{{ site.description }}</p>
 </div>
 
 <div class="cards">
