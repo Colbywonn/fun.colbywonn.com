@@ -17,12 +17,12 @@
     <div class="site-nav">
       <div class="site-nav-inner">
         <nav>
-          <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>fun:~$</a>
+          <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
           {%- for p in site.data.pages %}{% unless p.soon %}
-          <a class="path{% if page.url contains p.url %} current{% endif %}" href="{{ p.url | relative_url }}"{% if page.url contains p.url %} aria-current="page"{% endif %}>~/{{ p.nav | default: p.title | downcase }}</a>
+          <a class="path{% if page.url contains p.url %} current{% endif %}" href="{{ p.url | relative_url }}"{% if page.url contains p.url %} aria-current="page"{% endif %}>{{ p.nav | default: p.title }}</a>
           {%- endunless %}{% endfor %}
         </nav>
-        <a class="path" href="https://colbywonn.com" title="Back to colbywonn.com">cd ..</a>
+        <a class="path" href="https://colbywonn.com">colbywonn.com</a>
       </div>
     </div>
   </header>

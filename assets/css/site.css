@@ -116,26 +116,9 @@ h3 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
 a { color: var(--accent); text-underline-offset: 0.2em; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* Homepage hero: a little CRT screen. Glow, faint scanlines, a hint of red/blue fringing, and a
-   gentle flicker that never flashes; motion stops for visitors who ask for reduced motion. */
-.screen {
-  position: relative;
-  overflow: hidden;
-  margin: 0 0 1.5rem;
-  padding: 1.4rem 1.6rem 1.6rem;
-  background: radial-gradient(ellipse at 50% 40%, #0d1a12 0%, #070b08 70%, #040604 100%);
-  border: 1px solid var(--edge);
-  border-radius: 10px;
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 6px rgba(60, 207, 122, 0.15);
-}
-.screen::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.32) 0 1px, transparent 1px 3px);
-}
-.prompt { margin: 0 0 0.2rem; font-family: var(--crt); font-size: 1.35rem; color: var(--accent); opacity: 0.85; }
+/* Homepage hero: the title glows like a CRT, with a hint of red/blue fringing and a gentle
+   flicker that never flashes; motion stops for visitors who ask for reduced motion. */
+.hero { margin: 0 0 2.25rem; }
 .crt {
   margin: 0;
   font-family: var(--crt);
@@ -150,7 +133,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   animation: crt-flicker 6s infinite;
 }
 .crt .cursor { animation: blink 1.1s steps(1) infinite; }
-.screen .tagline { position: relative; margin: 0.9rem 0 0; font-size: 1.1rem; }
+.hero .tagline { margin: 0.9rem 0 0; font-size: 1.1rem; }
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes crt-flicker {
   0%, 100% { opacity: 1; transform: none; }
