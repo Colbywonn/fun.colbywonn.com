@@ -16,10 +16,6 @@
   url: /sorting/
   blurb: Meme sorting algorithms, running in real time.
   soon: true
-- title: Map Generator
-  url: /map/
-  blurb: Type a seed, get a world.
-  soon: true
 - title: Servers
   url: /servers/
   blurb: Status and how to join, once Firelink is up.
