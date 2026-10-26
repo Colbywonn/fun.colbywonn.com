@@ -72,11 +72,23 @@ main,
   align-items: baseline;
   gap: 0.5rem 1.5rem;
 }
-.site-nav-inner nav { display: flex; gap: 1.25rem; }
+/* Terminal-style nav: a glowing prompt as the home link, pages as paths, ">" marks where you are */
+.site-nav-inner nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.25rem; }
 .site-nav-inner a { color: var(--text); text-decoration: none; }
-.site-nav-inner a:hover,
-.site-nav-inner a.current { color: var(--accent); }
-.site-nav-inner a.current { text-decoration: underline; text-underline-offset: 0.2em; font-weight: 600; }
+.brand {
+  font-family: var(--crt);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #8dffbc !important;
+  text-shadow: 0 0 2px rgba(60, 207, 122, 0.9), 0 0 9px rgba(60, 207, 122, 0.5);
+}
+.brand:hover { text-shadow: 0 0 2px rgba(60, 207, 122, 1), 0 0 14px rgba(60, 207, 122, 0.8); }
+.path { position: relative; font-size: 0.92rem; }
+.path:hover,
+.path.current { color: var(--accent); }
+.path.current { font-weight: 600; }
+.path.current::before { content: ">"; position: absolute; right: 100%; margin-right: 0.3em; }
+.path:hover { text-decoration: underline; text-underline-offset: 0.25em; }
 
 /* Wide screens: black canvas with dim solder-mask traces, and the page as a sheet on top of it
    with a crisp edge. The header is see-through beside the sheet so the traces run up to the top.

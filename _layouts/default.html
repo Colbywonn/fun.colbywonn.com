@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
   <meta name="theme-color" content="#000000">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <link rel="preload" href="{{ '/assets/fonts/plex-mono-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-  {% if page.hero %}<link rel="preload" href="{{ '/assets/fonts/vt323-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>{% endif %}
+  <link rel="preload" href="{{ '/assets/fonts/vt323-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <!-- ?v=build time: GitHub Pages lets browsers reuse assets for 10 min, so stamp each deploy -->
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
@@ -15,12 +17,12 @@
     <div class="site-nav">
       <div class="site-nav-inner">
         <nav>
-          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="current"{% endif %}>Home</a>
+          <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>fun:~$</a>
           {%- for p in site.data.pages %}{% unless p.soon %}
-          <a href="{{ p.url | relative_url }}"{% if page.url contains p.url %} class="current"{% endif %}>{{ p.nav | default: p.title }}</a>
+          <a class="path{% if page.url contains p.url %} current{% endif %}" href="{{ p.url | relative_url }}"{% if page.url contains p.url %} aria-current="page"{% endif %}>~/{{ p.nav | default: p.title | downcase }}</a>
           {%- endunless %}{% endfor %}
         </nav>
-        <a href="https://colbywonn.com">colbywonn.com</a>
+        <a class="path" href="https://colbywonn.com" title="Back to colbywonn.com">cd ..</a>
       </div>
     </div>
   </header>
