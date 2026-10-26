@@ -15,4 +15,4 @@ Toys, lists, and side projects by Colby Miller. A sister site to [colbywonn.com]
 
 ## License
 
-Except where noted, the content and code are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). The fonts in `assets/fonts/` are under the [SIL Open Font License 1.1](https://openfontlicense.org/).
+Except where noted, the content and code are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). The fonts in `assets/fonts/` are under the [SIL Open Font License 1.1](https://openfontlicense.org/). The icons in `assets/img/icons/` are from [Simple Icons](https://simpleicons.org/) (CC0); the brands belong to their owners.
