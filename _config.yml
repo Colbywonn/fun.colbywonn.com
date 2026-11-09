@@ -3,6 +3,9 @@ description: Side projects, useless junk, slop, and more!
 url: "https://fun.colbywonn.com"
 author: Colby Miller
 lang: en
+# true: every page shows the under-construction notice instead of its content, and asks
+# search engines not to index it. The real pages stay in the repo; set false to bring them back.
+under_construction: true
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

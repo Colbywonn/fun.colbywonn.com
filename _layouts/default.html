@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
   <meta name="theme-color" content="#000000">
+  {% if site.under_construction %}<meta name="robots" content="noindex">{% endif %}
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
   <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <link rel="preload" href="{{ '/assets/fonts/plex-mono-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
@@ -18,16 +19,23 @@
       <div class="site-nav-inner">
         <nav>
           <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
-          {%- for p in site.data.pages %}{% unless p.soon %}
+          {%- unless site.under_construction %}{% for p in site.data.pages %}{% unless p.soon %}
           <a class="path{% if page.url contains p.url %} current{% endif %}" href="{{ p.url | relative_url }}"{% if page.url contains p.url %} aria-current="page"{% endif %}>{{ p.nav | default: p.title }}</a>
-          {%- endunless %}{% endfor %}
+          {%- endunless %}{% endfor %}{% endunless %}
         </nav>
         <a class="path" href="https://colbywonn.com">colbywonn.com</a>
       </div>
     </div>
   </header>
   <main>
+    {%- if site.under_construction %}
+    <div class="hero">
+      <h1 class="crt">fun.colbywonn.com<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="tagline">Under construction. Check back soon!</p>
+    </div>
+    {%- else %}
     {{ content }}
+    {%- endif %}
   </main>
   <footer class="site-footer">
     <p>
